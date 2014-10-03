@@ -1,0 +1,14 @@
+﻿2014/10/02 15:04:19 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\val00259\nayamo\jexport\VC\ALL_BUILD.vcxproj" (Rebuild ターゲット)。
+     1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1492,5): warning : The referenced project 'C:/Users/val00259/jexport/VC/ZERO_CHECK.vcxproj' does not exist.
+     1>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1492,5): warning : The referenced project 'C:/Users/val00259/jexport/VC/jexport.vcxproj' does not exist.
+     1>CustomBuild:
+         Building Custom Rule C:/Users/val00259/jexport/CMakeLists.txt
+         CMake is re-running because C:\Users\val00259\jexport\VC\CMakeFiles\generate.stamp dependency file is missing.
+     1>CUSTOMBUILD : CMake error : The source directory "C:/Users/val00259/jexport" does not appear to contain CMakeLists.txt.
+         Specify --help for usage, or press the help button on the CMake GUI.
+     1>プロジェクト "C:\Users\val00259\nayamo\jexport\VC\ALL_BUILD.vcxproj" (Rebuild ターゲット) のビルドが終了しました -- 失敗。
+
+ビルドに失敗しました。
+
+経過時間 00:00:00.15

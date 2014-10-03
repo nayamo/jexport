@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{9FB6ED65-C402-46C3-B6F3-36BDE16A2E5D}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>jexport</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\val00259\nayamo\jexport\VC\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jexport.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">jexport</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\val00259\nayamo\jexport\VC\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jexport.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">jexport</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\val00259\nayamo\jexport\VC\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">jexport.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">jexport</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\val00259\nayamo\jexport\VC\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">jexport.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">jexport</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -g -O0 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;EXP_AVAILABLE_DISP_LINE;CMAKE_INTDIR="Debug";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;EXP_AVAILABLE_DISP_LINE;CMAKE_INTDIR=\"Debug\";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/val00259/nayamo/jexport/VC/Debug/jexport.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/val00259/nayamo/jexport/VC/jexport.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/val00259/nayamo/jexport/VC/Debug/jexport.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EXP_AVAILABLE_DISP_LINE;CMAKE_INTDIR="Release";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;EXP_AVAILABLE_DISP_LINE;CMAKE_INTDIR=\"Release\";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/val00259/nayamo/jexport/VC/Release/jexport.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/val00259/nayamo/jexport/VC/jexport.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/val00259/nayamo/jexport/VC/Release/jexport.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/val00259/nayamo/jexport/VC/MinSizeRel/jexport.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/val00259/nayamo/jexport/VC/jexport.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/val00259/nayamo/jexport/VC/MinSizeRel/jexport.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";jexport_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\val00259\nayamo\jexport\.\Platform\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\Headers;C:\Users\val00259\nayamo\jexport\.\ExpDiaLib\ViewHeaders;C:\Users\val00259\nayamo\jexport\.\ExpToku\Headers;C:\Users\val00259\nayamo\jexport\.\ExpToku\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\RosenMap\Headers;C:\Users\val00259\nayamo\jexport\.\RosenMap\PublicHeaders;C:\Users\val00259\nayamo\jexport\.\DispLineLib;C:\Users\val00259\nayamo\jexport\timetable;C:\Users\val00259\nayamo\jexport\timetable_trunk;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>C:/Users/val00259/nayamo/jexport/VC/RelWithDebInfo/jexport.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Users/val00259/nayamo/jexport/VC/jexport.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Users/val00259/nayamo/jexport/VC/RelWithDebInfo/jexport.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/val00259/nayamo/jexport/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/val00259/nayamo/jexport -BC:/Users/val00259/nayamo/jexport/VC --check-stamp-file C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/val00259/nayamo/jexport/CMakeLists.txt;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/val00259/nayamo/jexport/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/val00259/nayamo/jexport -BC:/Users/val00259/nayamo/jexport/VC --check-stamp-file C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/val00259/nayamo/jexport/CMakeLists.txt;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/val00259/nayamo/jexport/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/val00259/nayamo/jexport -BC:/Users/val00259/nayamo/jexport/VC --check-stamp-file C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/val00259/nayamo/jexport/CMakeLists.txt;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/val00259/nayamo/jexport/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/val00259/nayamo/jexport -BC:/Users/val00259/nayamo/jexport/VC --check-stamp-file C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/val00259/nayamo/jexport/CMakeLists.txt;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeSystem.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeGenericSystem.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\WindowsPaths.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\Platform\Windows-MSVC.cmake;C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\3.0.2\CMakeRCCompiler.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeRCInformation.cmake;C:\Program Files (x86)\CMake\share\cmake-3.0\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\val00259\nayamo\jexport\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\val00259\nayamo\jexport\VC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\timetable\dl_line.c"  />
+    <ClCompile Include="..\timetable\dl_lineptn.c"  />
+    <ClCompile Include="..\timetable\dl_mask.c"  />
+    <ClCompile Include="..\timetable\dl_route.c"  />
+    <ClCompile Include="..\timetable\hash.c"  />
+    <ClCompile Include="..\timetable\ltt_api.c"  />
+    <ClCompile Include="..\timetable\ltt_dest.c"  />
+    <ClCompile Include="..\timetable\ltt_excptrule.c"  />
+    <ClCompile Include="..\timetable\ltt_group_line.c"  />
+    <ClCompile Include="..\timetable\ltt_init.c"  />
+    <ClCompile Include="..\timetable\ltt_line.c"  />
+    <ClCompile Include="..\timetable\ltt_secptn.c"  />
+    <ClCompile Include="..\timetable\ltt_section.c"  />
+    <ClCompile Include="..\timetable\ltt_station.c"  />
+    <ClCompile Include="..\timetable\ltt_summary.c"  />
+    <ClCompile Include="..\timetable\ltt_timetable.c"  />
+    <ClCompile Include="..\timetable\ltt_train.c"  />
+    <ClCompile Include="..\timetable\ltt_ttgroup.c"  />
+    <ClCompile Include="..\timetable\ltt_util.c"  />
+    <ClCompile Include="..\timetable\vector.c"  />
+    <ClCompile Include="..\timetable_trunk\Dia_STtimeTable.c"  />
+    <ClCompile Include="..\timetable_trunk\Dia_TimeTable.c"  />
+    <ClCompile Include="..\timetable_trunk\Dia_TRtimeTable.c"  />
+    <ClCompile Include="..\Platform\Sources\ExpContainer.c"  />
+    <ClCompile Include="..\Platform\Sources\ExpContainerTools.c"  />
+    <ClCompile Include="..\Platform\Sources\ExpDate.c"  />
+    <ClCompile Include="..\Platform\Sources\ExpFile.c"  />
+    <ClCompile Include="..\Platform\Sources\ExpGetToday.c"  />
+    <ClCompile Include="..\Platform\Sources\ExpJapan.c"  />
+    <ClCompile Include="..\Platform\Sources\ExpMem.c"  />
+    <ClCompile Include="..\ExpLib\Sources\AddKm.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Air.c"  />
+    <ClCompile Include="..\ExpLib\Sources\AirFare.c"  />
+    <ClCompile Include="..\ExpLib\Sources\BinarySearch.c"  />
+    <ClCompile Include="..\ExpLib\Sources\BothWay.c"  />
+    <ClCompile Include="..\ExpLib\Sources\BTicket.c"  />
+    <ClCompile Include="..\ExpLib\Sources\BusWari.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Calc3War.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Calc4War.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcAir.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcBus.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcChild.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcEida.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcEiTo.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcExp.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcFare.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcHden.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcIC.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcJR.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcJR2.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcJR3.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcKeih.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcKeis.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcKint.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcKKosoku.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcMeit.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcOsa.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcSep.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcToqu.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcTosa.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcTotal.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcWari.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CalcZeng.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ChainControl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Charges.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Cheap.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Check.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Chk2CoRl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CodeTable.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CodeTool.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CountSta.c"  />
+    <ClCompile Include="..\ExpLib\Sources\CutLBit.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_BuildAvgLinkInfo.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_CheckLinkRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_CreateLink.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_EditRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_Job.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_Link.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_LinkUty.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_Mask.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_NodeList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_Search.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_StockRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DDS_StockTrain.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DiaRail.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DspMemCtrl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\DspSort.c"  />
+    <ClCompile Include="..\ExpLib\Sources\EditRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\EditTool.c"  />
+    <ClCompile Include="..\ExpLib\Sources\EkiCd.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpAirFare.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpAirFareClassList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpAirVacancy.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpBaseRail.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpBit.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpConfig.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpCorp.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpCorpMask.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpCorpSectionList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpCouponTicket.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpCtrl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpDataCtrl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpDataFile.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpDiaRail.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpError.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpFareClassList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpFileEntry.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpGate.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpGuidExit.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpGuidMap.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpGuidWelfare.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpHandler.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpICCardList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpIOWayMask.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpLandMark.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpLandmarkExt.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpLatiLongi.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpParam.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpProgress.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRail.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRailMask.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRailSectionList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRangeRes.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRepay.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRestoreRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRouteBus.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpRouteRes.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpSearchCtrl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpSeason.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpSection.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpStation.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpStationMask.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpStopSections.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpSurchargeList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpTeikiClassList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpTeikiRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpTeikiSeatList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpTicketSysList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpTimetable.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ExpWalkInfo.c"  />
+    <ClCompile Include="..\ExpLib\Sources\FareCorp.c"  />
+    <ClCompile Include="..\ExpLib\Sources\FareSub.c"  />
+    <ClCompile Include="..\ExpLib\Sources\FrameRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ICCard.c"  />
+    <ClCompile Include="..\ExpLib\Sources\InsSepL.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOAirM.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOArea.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOBedCar.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOChangeTime.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOCnvSta.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOCorp.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOData.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IODiaBit.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOExpAdd.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOExpRl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOFare.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOFNo.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOGate.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOGuid.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOInChg.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOKenRl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOKmUnit.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOLink.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOListData.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IONameIx.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IONotUse.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IONTeiki.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOPole.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IORail.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IORailCh.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IORailM.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IORailNg.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IORenm.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IORouteBus.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOSenkuGrp.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOSenkumei.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOSenmei.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOSleepM.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOSplRail.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOSta1st.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOStaGrp.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOStaM.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOStaRl.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOStaWt.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOTime.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWalk.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWari2F.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWari2H.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWari2T.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWari3F.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWari3H.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWari3T.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOWari4F.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IOZengo.c"  />
+    <ClCompile Include="..\ExpLib\Sources\IsBack.c"  />
+    <ClCompile Include="..\ExpLib\Sources\JrRailKB.c"  />
+    <ClCompile Include="..\ExpLib\Sources\JrResInfo.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Kasan.c"  />
+    <ClCompile Include="..\ExpLib\Sources\KmAdjust.c"  />
+    <ClCompile Include="..\ExpLib\Sources\KmDisped.c"  />
+    <ClCompile Include="..\ExpLib\Sources\LinearSearch.c"  />
+    <ClCompile Include="..\ExpLib\Sources\LinkDel.c"  />
+    <ClCompile Include="..\ExpLib\Sources\LinkEki.c"  />
+    <ClCompile Include="..\ExpLib\Sources\LinkLoad.c"  />
+    <ClCompile Include="..\ExpLib\Sources\LinkOpen.c"  />
+    <ClCompile Include="..\ExpLib\Sources\LinkSort.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Melt.c"  />
+    <ClCompile Include="..\ExpLib\Sources\PassList.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Repay.c"  />
+    <ClCompile Include="..\ExpLib\Sources\ResCalc.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Reserve.c"  />
+    <ClCompile Include="..\ExpLib\Sources\SaveFare.c"  />
+    <ClCompile Include="..\ExpLib\Sources\SaveKM.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Scramble.c"  />
+    <ClCompile Include="..\ExpLib\Sources\SearchRange.c"  />
+    <ClCompile Include="..\ExpLib\Sources\SearchRoute.c"  />
+    <ClCompile Include="..\ExpLib\Sources\SeatAdj.c"  />
+    <ClCompile Include="..\ExpLib\Sources\SeqPos.c"  />
+    <ClCompile Include="..\ExpLib\Sources\SetRails.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Teiki.c"  />
+    <ClCompile Include="..\ExpLib\Sources\TmTLoad.c"  />
+    <ClCompile Include="..\ExpLib\Sources\UseRails.c"  />
+    <ClCompile Include="..\ExpLib\Sources\UseRange.c"  />
+    <ClCompile Include="..\ExpLib\Sources\Weight.c"  />
+    <ClCompile Include="..\ExpLib\Sources\_DDS_Debug.c"  />
+    <ClCompile Include="..\ExpLib\Sources\_RangeSearch.c"  />
+    <ClCompile Include="..\ExpLib\Sources\_RouteCheck.c"  />
+    <ClCompile Include="..\ExpLib\Sources\_RouteSearch.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_Color.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_ColorClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_Common.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_CommonClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_CommonInfo.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_CorpClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_CorpV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_CorpV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_DiaClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_DriveV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_DriveV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_RouteV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_RouteV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionClass_Nickname.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionClass_Pattern.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionNicknameV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionNicknameV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionPatternV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionPatternV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_SectionV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_StationClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_StationV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_StationV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TextClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TextV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TextV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainClass.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainClass_Drive.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainClass_Kind.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainClass_Name.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainClass_Topic.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainKindV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainKindV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainNameV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainNameV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\Dia_TrainV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\ExpDiaDataBase.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\ExpDiaFileEntry.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\ExpDiaName.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\ExpDiaTraceTrain.c"  />
+    <ClCompile Include="..\ExpDiaLib\Sources\ExpDiaVersion.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_CollectViewV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_CommonInfoViewV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_CommonInfoViewV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_SectionViewV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_SectionViewV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_StationViewV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_TrainViewV2.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_ViewV1.c"  />
+    <ClCompile Include="..\ExpDiaLib\ViewSources\Dia_ViewV2.c"  />
+    <ClCompile Include="..\ExpToku\Sources\ExpTokuToku.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapFile.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapFileCtrl.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapImg.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapImgFile.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapItem.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapItemFile.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapPack.c"  />
+    <ClCompile Include="..\RosenMap\Sources\ExpMapTool.c"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/val00259/nayamo/jexport/VC/ZERO_CHECK.vcxproj">
+      <Project>906C8F41-93CD-4D12-B723-5C989B2F8137</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
