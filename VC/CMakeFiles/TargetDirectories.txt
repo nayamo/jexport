@@ -1,3 +1,0 @@
-C:/Users/val00259/nayamo/jexport/VC/CMakeFiles/ALL_BUILD.dir
-C:/Users/val00259/nayamo/jexport/VC/CMakeFiles/ZERO_CHECK.dir
-C:/Users/val00259/nayamo/jexport/VC/CMakeFiles/jexport.dir
